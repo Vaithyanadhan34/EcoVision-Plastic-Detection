@@ -1,0 +1,364 @@
+/* ===================================================
+   EcoVision AI Dashboard
+   style.css
+=================================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===================================================
+   GLOBAL
+=================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#eef3f8;
+
+    color:#222;
+
+    overflow-x:hidden;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#dfe7ef;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#198754;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#157347;
+}
+
+/* ===================================================
+   NAVBAR
+=================================================== */
+
+.navbar{
+
+    backdrop-filter:blur(12px);
+
+    background:rgba(33,37,41,.92)!important;
+
+    transition:.4s;
+
+    padding:14px 0;
+
+}
+
+.navbar-brand{
+
+    font-weight:700;
+
+    font-size:1.45rem;
+
+    letter-spacing:.5px;
+
+}
+
+.nav-link{
+
+    color:white!important;
+
+    margin-left:20px;
+
+    position:relative;
+
+    transition:.35s;
+
+}
+
+.nav-link:hover{
+
+    color:#41d98b!important;
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#20c997;
+
+    transition:.35s;
+
+}
+
+.nav-link:hover::after{
+
+    width:100%;
+
+}
+
+/* ===================================================
+   HERO
+=================================================== */
+
+.hero-section{
+
+    padding:80px 0;
+
+    background:linear-gradient(135deg,#ffffff,#edf5ff);
+
+}
+
+.hero-section h1{
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    color:#222;
+
+}
+
+.hero-section p{
+
+    font-size:18px;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-top:18px;
+
+    color:#666;
+
+}
+
+/* ===================================================
+   STATUS CARDS
+=================================================== */
+
+.status-card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    background:white;
+
+}
+
+.status-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.status-card .card-body{
+
+    padding:25px;
+
+}
+
+.status-card h6{
+
+    color:#777;
+
+    margin-bottom:15px;
+
+}
+
+.status-card h2{
+
+    font-weight:700;
+
+}
+
+.status-card h3{
+
+    font-weight:700;
+
+}
+
+.status-card i{
+
+    margin-right:6px;
+
+}
+
+/* ===================================================
+   CAMERA CARD
+=================================================== */
+
+.camera-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.camera-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 25px 45px rgba(0,0,0,.15);
+
+}
+
+.camera-header{
+
+    padding:18px 22px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:linear-gradient(90deg,#198754,#20c997);
+
+    color:white;
+
+}
+
+.camera-header h4{
+
+    margin:0;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+}
+
+.camera-body{
+
+    padding:20px;
+
+    background:#f8f9fa;
+
+}
+
+/* ===================================================
+   CAMERA IMAGE
+=================================================== */
+
+.camera-image{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    border:4px solid white;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.camera-image:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* ===================================================
+   BADGES
+=================================================== */
+
+.badge{
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+    font-size:.82rem;
+
+    letter-spacing:.5px;
+
+}
+
+/* ===================================================
+   BUTTONS
+=================================================== */
+
+.btn{
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-lg{
+
+    padding:14px 34px;
+
+}
+
+.btn-success{
+
+    box-shadow:0 10px 25px rgba(25,135,84,.30);
+
+}
+
+.btn-primary{
+
+    box-shadow:0 10px 25px rgba(13,110,253,.25);
+
+}
+
+.btn-danger{
+
+    box-shadow:0 10px 25px rgba(220,53,69,.25);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
